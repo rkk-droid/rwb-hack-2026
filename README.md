@@ -48,16 +48,10 @@ train_solo_track.parquet
 │   ├── generate_features.py   # Polars feature engineering pipeline
 │   ├── calibration.py         # Three calibration methods (global / per-group bias / per-group scale+bias)
 │   └── prepare_data.py        # Optional data filters (cut august/september, etc.)
-├── data/
-│   ├── train_solo_track.parquet.zip   # Raw training data (unzip before use)
-│   ├── test_solo_track.parquet.zip    # Raw test data   (unzip before use)
-│   ├── features.parquet.zip           # Pre-built feature matrix (unzip before use)
-│   └── feature_masks.pkl              # RFECV masks for each forecast step
 ├── 00-generate_features.ipynb         # Build features.parquet from raw training data
 ├── 01-feature_selection.ipynb         # RFECV feature selection (reads features.parquet)
 ├── 02-model_fitting.ipynb             # Training, prediction, calibration, submission
-├── presentation/
-│   └── presentation.pdf               # Solution presentation
+├── presentation.pdf               # Solution presentation
 └── README.md
 ```
 
