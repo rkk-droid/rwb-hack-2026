@@ -1,4 +1,4 @@
 docs/
 presentation/
 data/
-.gitignore
+.DS_Store
